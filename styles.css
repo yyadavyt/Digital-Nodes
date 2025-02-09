@@ -1,0 +1,171 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body and Basic Layout */
+  body {
+    font-family: 'Arial', sans-serif;
+    background: url('https://static.vecteezy.com/system/resources/previews/008/311/935/non_2x/the-illustration-graphic-consists-of-abstract-background-with-a-blue-gradient-dynamic-shapes-composition-eps10-perfect-for-presentation-background-website-landing-page-wallpaper-vector.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    line-height: 1.6;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Header Section */
+  header {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+    color: white;
+    padding: 15px 0;
+    position: relative;
+  }
+  
+  header .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  header .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header h1 {
+    font-size: 2.8rem;
+    margin: 0;
+  }
+  
+  header nav {
+    display: flex;
+    justify-content: flex-end;
+    position: relative; /* Ensure that we can adjust its position */
+    top: -60px; /* Move the nav up (adjust this value to move it further up) */
+  }
+  
+  header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+  }
+  
+  header nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+  }
+  
+  header nav a:hover {
+    color: #f39c12;
+  }
+  
+  /* Hero Section */
+  .hero {
+    position: relative;
+    text-align: center;
+    padding: 100px 0;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+  }
+  
+  .hero h2 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+  }
+  
+  .hero .btn {
+    background-color: #3c47e7;
+    padding: 12px 25px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .hero .btn:hover {
+    background-color: #2c3e50;
+  }
+  
+  /* Pricing Section */
+  #pricing {
+    background: rgba(255, 255, 255, 0.8); /* Light background */
+    padding: 60px 0;
+    text-align: center;
+  }
+  
+  #pricing h2 {
+    font-size: 3rem;
+    margin-bottom: 40px;
+  }
+  
+  .pricing-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+  }
+  
+  .card {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+    border: 1px solid #ddd;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .card p {
+    font-size: 1.3rem;
+    margin-bottom: 15px; /* Increased margin for better spacing */
+  }
+  
+  
+  .card .btn {
+    background-color: #3c47e7;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    border-radius: 5px;
+  }
+  
+  .card .btn:hover {
+    background-color: #2c3e50;
+  }
+  
+  /* Footer Section */
+  footer {
+    background: #3c47e7;
+    color: #fff;
+    text-align: center;
+    padding: 1px;
+  }
+  
+  footer p {
+    font-size: 1rem;
+  }
+  
