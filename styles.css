@@ -10,7 +10,6 @@ h2 {
   /* Adjust the font size to a smaller value */
 }
 
-
 /* Body and Basic Layout */
 body {
   font-family: 'Arial', sans-serif;
@@ -30,19 +29,15 @@ body {
 /* Header Section */
 header {
   background-color: rgba(0, 0, 0, 0.616);
-  /* Semi-transparent black */
   color: rgb(255, 255, 255);
-  padding: 2px;
-  /* Added padding for more spacious layout */
+  padding: 20px;
   position: relative;
-  margin-left: -550px;
-  /* Shift the header to the left */
+  margin-left: -700px;
   margin-bottom: 0px;
-  /* Add bottom margin for spacing */
 }
 
 header .container {
-  max-width: 800px;
+  max-width: 600px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -62,11 +57,8 @@ header nav {
   display: flex;
   justify-content: flex-end;
   position: relative;
-  /* Ensure that we can adjust its position */
-  top: -110px;
-  /* Move the nav up */
-  margin-right: -540px;
-  /* Adjust for positioning */
+  top: -79px;
+  margin-right: -710px;
 }
 
 header nav ul {
@@ -96,7 +88,6 @@ header nav a:hover {
   text-align: center;
   padding: 100px 0;
   background: rgba(0, 0, 0, 0.363);
-  /* Semi-transparent overlay */
 }
 
 .hero h2 {
@@ -127,7 +118,6 @@ header nav a:hover {
 /* Pricing Section */
 #pricing {
   background: rgb(0, 0, 0), 255;
-  /* Light background */
   padding: 60px 0;
   text-align: center;
 }
@@ -145,7 +135,6 @@ header nav a:hover {
 
 .card {
   background-color: rgba(0, 0, 0, 0.651);
-  /* Semi-transparent black */
   border: 1px solid #dddddd;
   padding: 30px;
   border-radius: 8px;
@@ -180,7 +169,6 @@ header nav a:hover {
 section {
   padding: 60px 20px;
   background-color: rgba(2, 2, 2, 0.144);
-  /* Light background with transparency */
 }
 
 section h2 {
@@ -202,7 +190,6 @@ section h2 {
 /* Individual Feature Styling */
 .feature {
   background: rgba(0, 0, 0, 0.295);
-  /* Slight transparency */
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 0 15px rgba(78, 77, 77, 0.466);
@@ -214,7 +201,6 @@ section h2 {
 .feature i {
   font-size: 3em;
   color: #FF5722;
-  /* Matching Minecraft theme color */
   margin-bottom: 15px;
 }
 
@@ -235,8 +221,63 @@ section h2 {
   box-shadow: 0 0 20px rgb(0, 0, 0);
 }
 
-/* Responsive Design */
+/* Responsive Design for Mobile */
 @media (max-width: 768px) {
+  /* Header */
+  header {
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+
+  header .container {
+    padding: 0 20px;
+  }
+
+  header h1 {
+    font-size: 2.2rem;
+  }
+
+  header nav {
+    top: 0;
+    margin-right: 0;
+    justify-content: center;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+  header nav a {
+    font-size: 1.2rem;
+  }
+
+  /* Hero Section */
+  .hero h2 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1.1rem;
+  }
+
+  .hero .btn {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+
+  /* Pricing Section */
+  #pricing h2 {
+    font-size: 2rem;
+  }
+
+  .pricing-cards {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  /* Features */
   .features {
     flex-direction: column;
     align-items: center;
@@ -246,15 +287,31 @@ section h2 {
     width: 80%;
     margin-bottom: 30px;
   }
+
+  /* Footer */
+  footer {
+    padding: 30px 0;
+  }
+
+  footer p {
+    font-size: 1rem;
+  }
+
+  footer a {
+    font-size: 1rem;
+    margin: 10px 0;
+  }
+
+  footer div a {
+    font-size: 1.8em;
+  }
 }
 
 /* Footer Section */
 footer {
   background-color: rgba(0, 0, 0, 0.7);
-  /* Semi-transparent black background */
   color: white;
   padding: 20px 0;
-  /* Added more padding */
   text-align: center;
 }
 
@@ -265,7 +322,6 @@ footer p {
 
 footer a {
   color: #ffffff;
-  /* Accent color for links */
   text-decoration: none;
   margin: 0 15px;
   font-size: 1.1em;
@@ -274,7 +330,6 @@ footer a {
 
 footer a:hover {
   color: #00ffc8;
-  /* Hover color for links */
 }
 
 /* Social Media Links */
@@ -285,18 +340,9 @@ footer div {
 footer div a {
   margin: 0 10px;
   font-size: 1.5em;
-  /* Larger size for social media icons */
 }
 
-/* Responsive Design for Footer */
-@media (max-width: 78px) {
-  footer a {
-    display: block;
-    margin-bottom: 10px;
-  }
-
-  footer div a {
-    font-size: 1.8em;
-    /* Slightly larger icons on smaller screens */
-  }
+footer div a:hover {
+  color: #1eb47b;
 }
+
