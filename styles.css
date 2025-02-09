@@ -5,6 +5,11 @@
     box-sizing: border-box;
   }
   
+  h2 {
+    font-size: 2rem; /* Adjust the font size to a smaller value */
+  }
+  
+  
   /* Body and Basic Layout */
   body {
     font-family: 'Arial', sans-serif;
@@ -24,10 +29,12 @@
   /* Header Section */
   header {
     background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
-    color: white;
-    padding: 15px 0;
+    color: rgb(255, 255, 255);
+    padding: 5px 20px; /* Added padding to make it more spacious */
     position: relative;
-  }
+    margin-left: -550px; /* Shift the header to the left by 10px (adjust as needed) */
+}
+
   
   header .container {
     max-width: 1200px;
@@ -50,7 +57,8 @@
     display: flex;
     justify-content: flex-end;
     position: relative; /* Ensure that we can adjust its position */
-    top: -60px; /* Move the nav up (adjust this value to move it further up) */
+    top: -110px; /* Move the nav up (adjust this value to move it further up) */
+    margin-right: -530px;
   }
   
   header nav ul {
