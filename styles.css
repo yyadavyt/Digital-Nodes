@@ -14,42 +14,89 @@ body {
 }
 
 .container {
-  width: 90%;
+  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
 }
 
-/* Header Section */
+/* General Styles for Header */
 header {
-  background: #3c47e7; /* Red color */
-  color: #fff;
-  padding: 20px 0;
+  background-color: #2c3e50; /* Dark background */
+  color: white; /* White text color */
+  padding: 17px 0; /* Top and bottom padding */
+}
+
+header .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+header .header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative; /* To position nav absolutely inside the container */
 }
 
 header h1 {
   font-size: 2.5rem;
-  text-align: center;
+  margin: 0;
+  flex: 1; /* Allow the heading to take up available space */
 }
 
-nav ul {
+header nav {
+  display: flex;
+  justify-content: flex-end; /* Align navigation links to the right */
+  position: absolute; /* Position the nav absolutely inside the container */
+  top: 15px; /* Move the nav 10px from the top */
+  right: 12px; /* Move the nav 20px from the right edge (adjust this value) */
+}
+
+header nav ul {
   list-style-type: none;
-  text-align: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
 }
 
-nav ul li {
-  display: inline;
-  margin: 0 15px;
-}
-
-nav ul li a {
-  color: #fff;
+header nav a {
   text-decoration: none;
-  font-size: 1.1rem;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
 }
 
-nav ul li a:hover {
-  color: #3c47e7; /* Darker red on hover */
+header nav a:hover {
+  color: #f39c12; /* Hover effect to change color */
+}
+
+@media (max-width: 768px) {
+  header .header-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  header nav {
+    position: relative; /* Make it normal flow on smaller screens */
+    top: 0;
+    justify-content: flex-start; /* Align to the left */
+  }
+
+  header nav ul {
+    display: block;
+    width: 100%;
+    text-align: right; /* Align to the right on smaller screens */
+  }
+
+  header nav a {
+    font-size: 1.2rem;
+    padding: 5px 0;
+  }
 }
 
 /* Hero Section */
